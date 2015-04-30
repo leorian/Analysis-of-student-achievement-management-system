@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+<include file="struts-default.xml"/>
+<package name="stu" extends="struts-default">
+		<interceptors>
+			<interceptor name="stuauthority" class="com.xscj.util.StuAuthorityInterceptor">
+			</interceptor>
+			<interceptor-stack name="stumydefault">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="stuauthority"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="stumydefault"></default-interceptor-ref>
+		<global-results>
+			<result name="login">index.jsp</result>
+		</global-results>
+	</package>
+	<package name="scoreSearch" extends="stu">
+		<action name="stuMain" class="StuMainAction">
+			<result>/WEB-INF/student/stuMain.jsp</result>
+		</action>
+		<action name="stuScoreSearch" class="StuScoreSearchAction">
+			<result>/WEB-INF/student/stuScoreSearch.jsp</result>
+			<result name="input" type="redirectAction">stuMain</result>
+		</action>
+	</package>
+	<package name="scoreJudge" extends="stu, json-default">
+		<action name="scoreExisitsTest" class="ScoreExisitsTestAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="passModify" class="PassModifyAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+</struts>    

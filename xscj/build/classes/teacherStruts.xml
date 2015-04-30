@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+<include file="struts-default.xml"/>
+	<package name="teacher" extends="struts-default">
+		<interceptors>
+			<interceptor name="teacherauthority" class="com.xscj.util.TeacherAuthorityInterceptor">
+			</interceptor>
+			<interceptor-stack name="teachermydefault">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="teacherauthority"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="teachermydefault"></default-interceptor-ref>
+		<global-results>
+			<result name="login">index.jsp</result>
+		</global-results>
+	</package>
+	<package name="teacherManager" extends="teacher">
+		<action name="teacherMain" class="TeacherMainAction">
+			<result>/WEB-INF/teacher/teacherMain.jsp</result>
+		</action>
+		<action name="teacherScoreAdd" class="TeacherScoreAddAction">
+			<result>/WEB-INF/teacher/teacherScoreAdd.jsp</result>
+			<result name="input" type="redirectAction">teacherMain</result>
+		</action>
+		<action name="teacherScoreAddSuc" class="TeacherScoreAddSucAction">
+			<result>/WEB-INF/teacher/teacherScoreAddSuc.jsp</result>
+			<result name="input" type="redirectAction">teacherMain</result>
+		</action>
+		<action name="teacherScoreDel" class="TeacherScoreDelAction">
+			<result>/WEB-INF/teacher/teacherScoreDel.jsp</result>
+			<result name="input" type="redirectAction">teacherMain</result>
+		</action>
+		<action name="teacherScoreDelSuc" class="TeacherScoreDelSucAction">
+			<result>/WEB-INF/teacher/teacherScoreDelSuc.jsp</result>
+			<result name="input" type="redirectAction">teacherMain</result>
+		</action>
+		<action name="teacherScoreModify" class="TeacherScoreModifyAction">
+			<result>/WEB-INF/teacher/teacherScoreModify.jsp</result>
+			<result name="input" type="redirectAction">teacherMain</result>
+		</action>
+		<action name="teacherScoreModifySuc" class="TeacherScoreModifySucAction">
+			<result>/WEB-INF/teacher/teacherScoreModifySuc.jsp</result>
+			<result name="input" type="redirectAction">teacherMain</result>
+		</action>
+		<action name="teacherScoreSeeing" class="TeacherScoreSeeingAction">
+			<result>/WEB-INF/teacher/teacherScoreSeeing.jsp</result>
+			<result name="input" type="redirectAction">teacherMain</result>
+		</action>
+	</package>
+	
+	<package name="teacherJudge" extends="teacher, json-default">
+		<action name="teacherPassModify" class="TeacherPassModifyAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+</struts>    

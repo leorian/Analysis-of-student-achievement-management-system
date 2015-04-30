@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+<include file="struts-default.xml"/>
+	<package name="admin" extends="struts-default">
+		<interceptors>
+			<interceptor name="authority" class="com.xscj.util.AuthorityInterceptor">
+			</interceptor>
+			<interceptor-stack name="mydefault">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="authority"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="mydefault"></default-interceptor-ref>
+		<global-results>
+			<result name="login">index.jsp</result>
+		</global-results>
+		<action name="adminMain" class="AdminMainAction">
+			<result>/WEB-INF/admin/adminMain.jsp</result>
+		</action>
+	</package>
+	<package name="managerjob" extends="admin">
+		<action name="teachingArrangeSee" class="TeachingArrangeSeeAction">
+			<result>/WEB-INF/admin/teachingArrangeSee.jsp</result>
+			<result type="redirectAction" name="input">gradeTeachingChose</result>
+		</action>
+		<action name="teachingArrangeModify" class="TeachingArrangeModifyAction">
+			<result>/WEB-INF/admin/teachingArrangeModify.jsp</result>
+			<result type="redirectAction" name="input">gradeTeachingChose</result>
+		</action>
+		<action name="teachingArrangeModifySuc" class="TeachingArrangeModifySucAction">
+			<result type="redirectAction">gradeTeachingChose</result>
+			<result name="input" type="redirectAction">teachingArrangeModify.action?gradeChose=${gradeChose}&amp;xueqiChose=${xueqiChose}</result>
+		</action>
+		<action name="stuForm" class="StuFormAction">
+			<result>/WEB-INF/admin/stuForm.jsp</result>
+		</action>
+		<action name="stuFormRegister" class="StuFormRegisterAction">
+			<result>/WEB-INF/admin/stuFormSuc.jsp</result>
+			<result type="redirectAction" name="input">stuForm</result>
+		</action>
+		<action name="stuSearch" class="StuSearchAction">
+			<result>/WEB-INF/admin/stuSearch.jsp</result>
+		</action>
+		<action name="stuSeeing" class="StuSeeingAction">
+			<result>/WEB-INF/admin/stuSeeing.jsp</result>
+			<result type="redirectAction" name="input">showAllStu</result>
+		</action>
+		<action name="stuModify" class="StuModifyAction">
+			<result>/WEB-INF/admin/stuModify.jsp</result>
+			<result type="redirectAction" name="input">showAllStu</result>
+		</action>
+		<action name="stuModifySuc" class="StuModifySucAction">
+			<result>/WEB-INF/admin/stuModifySuc.jsp</result>
+			<result type="redirectAction" name="input">showAllStu</result>
+		</action>
+		<action name="stuSearchSuc" class="StuSearchSucAction">
+			<result>/WEB-INF/admin/stuSearchSuc.jsp</result>
+			<result type="redirectAction" name="input">stuSearch</result>
+		</action>
+		<action name="stuSearchByGrade" class="StuSearchByGradeAction">
+			<result>/WEB-INF/admin/stuSearchByGrade.jsp</result>
+		</action>
+		<action name="stuSearchSucByGrade" class="StuSearchSucByGradeAction">
+			<result>/WEB-INF/admin/stuSearchSucByGrade.jsp</result>
+			<result type="redirectAction" name="input">stuSearchByGrade</result>
+		</action>
+		<action name="teacherForm" class="TeacherFormAction">
+			<result>/WEB-INF/admin/teacherForm.jsp</result>
+		</action>
+		<action name="teacherFormRegister" class="TeacherFormRegisterAction">
+			<result>/WEB-INF/admin/teacherFormSuc.jsp</result>
+			<result type="redirectAction" name="input">showAllTeacher</result>
+		</action>
+		<action name="teacherSearch" class="TeacherSearchAction">
+			<result>/WEB-INF/admin/teacherSearch.jsp</result>
+		</action>
+		<action name="teacherSearchSuc" class="TeacherSearchSucAction">
+			<result>/WEB-INF/admin/teacherSearchSuc.jsp</result>
+		</action>
+		<action name="teacherSeeing" class="TeacherSeeingAction">
+			<result>/WEB-INF/admin/teacherSeeing.jsp</result>
+			<result type="redirectAction" name="input">teacherSearch</result>
+		</action>
+		<action name="teacherModify" class="TeacherModifyAction">
+			<result>/WEB-INF/admin/teacherModify.jsp</result>
+			<result type="redirectAction" name="input">teacherSearch</result>
+		</action>
+		<action name="teacherModifySuc" class="TeacherModifySucAction">
+			<result>/WEB-INF/admin/teacherModifySuc.jsp</result>
+		</action>
+		<action name="showAllStu" class="ShowAllStuAction">
+			<result>/WEB-INF/admin/showAllStu.jsp</result>
+		</action>
+		<action name="showAllTeacher" class="ShowAllTeacherAction">
+			<result>/WEB-INF/admin/showAllTeacher.jsp</result>
+		</action>
+		<action name="courseForm" class="CourseFormAction">
+			<result>/WEB-INF/admin/courseForm.jsp</result>
+		</action>
+		<action name="courseFormRegister" class="CourseFormRegisterAction">
+			<result type="redirectAction">courseForm</result>
+		</action>
+		<action name="gradeSetUp" class="GradeSetUpAction">
+			<result>/WEB-INF/admin/gradeSetUp.jsp</result>
+		</action>
+		<action name="gradeSetUpRegister" class="GradeSetUpRegisterAction">
+			<result type="redirectAction">gradeSetUp</result>
+		</action>
+
+		<action name="teachingArrangeForm" class="TeachingArrangeFormAction">
+			<result>/WEB-INF/admin/teachingArrangeForm.jsp</result>
+			<result type="redirectAction" name="input">gradeTeachingChose</result>
+		</action>
+
+		<action name="teachingArrangeFormRegister" class="TeachingArrangeFormRegisterAction">
+			<result type="redirectAction">gradeTeachingChose</result>
+			<result name="input" type="redirectAction">teachingArrangeForm.action?gradeChose=${gradeChose}&amp;xueqiChose=${xueqiChose}
+			</result>
+		</action>
+		<action name="gradeTeachingChose" class="GradeTeachingChoseAction">
+			<result>/WEB-INF/admin/gradeTeachingChose.jsp</result>
+		</action>
+		<action name="courseAll" class="CourseAllAction">
+			<result>/WEB-INF/admin/courseAll.jsp</result>
+		</action>
+		<action name="gradeAll" class="GradeAllAction">
+			<result>/WEB-INF/admin/gradeAll.jsp</result>
+		</action>
+		<action name="courseDelete" class="CourseDeleteAction">
+			<result type="redirectAction">courseForm</result>
+		</action>
+		<action name="gradeDelete" class="GradeDeleteAction">
+			<result type="redirectAction">gradeSetUp</result>
+		</action>
+		<action name="stuDelete" class="StuDeleteAction">
+			<result type="redirectAction">showAllStu</result>
+		</action>
+		<action name="teacherDelete" class="TeacherDeleteAction">
+			<result type="redirectAction">showAllTeacher</result>
+			<result type="redirectAction" name="input">showAllTeacher</result>
+		</action>
+		<action name="teacherTeaching" class="TeacherTeachingAction">
+			<result>/WEB-INF/admin/teacherTeaching.jsp</result>
+		</action>
+		<action name="scoreRecord" class="ScoreRecordAction">
+			<result>/WEB-INF/admin/scoreRecord.jsp</result>
+		</action>
+		<action name="scoreRecordFinish" class="ScoreRecordFinishAction">
+			<result>/WEB-INF/admin/scoreRecordFinish.jsp</result>
+		</action>
+		<action name="scoreEnterChose" class="ScoreEnterChoseAction">
+			<result>/WEB-INF/admin/scoreEnterChose.jsp</result>
+		</action>
+		<action name="scoreEnterForm" class="ScoreEnterFormAction">
+			<result>/WEB-INF/admin/scoreEnterForm.jsp</result>
+		</action>
+		<action name="scoreQuery" class="ScoreQueryAction">
+			<result>/WEB-INF/admin/scoreQuery.jsp</result>
+		</action>
+		<action name="scoreQueryResult" class="ScoreQueryResultAction">
+			<result>/WEB-INF/admin/scoreQueryResult.jsp</result>
+		</action>
+		<action name="scoreQueryResultSecond" class="ScoreQueryResultSecondAction">
+			<result>/WEB-INF/admin/scoreQueryResultSecond.jsp</result>
+		</action>
+		<action name="scoreQueryResultThird" class="ScoreQueryResultThirdAction">
+			<result>/WEB-INF/admin/scoreQueryResultThird.jsp</result>
+		</action>
+		<action name="scoreQueryResultFour" class="ScoreQueryResultFourAction">
+			<result>/WEB-INF/admin/scoreQueryResultFour.jsp</result>
+		</action>
+		<action name="scoreQueryResultFive" class="ScoreQueryResultFiveAction">
+			<result>/WEB-INF/admin/scoreQueryResultFive.jsp</result>
+		</action>
+		<action name="scoreEnterSimpleStu" class="ScoreEnterSimpleStuAction">
+			<result>/WEB-INF/admin/scoreEnterSimpleStu.jsp</result>
+		</action>
+		<action name="scoreEnterSimpleStuSuc" class="ScoreEnterSimpleStuSucAction">
+			<result>/WEB-INF/admin/scoreEnterSimpleStuSuc.jsp</result>
+		</action>
+		<action name="scoreModify" class="ScoreModifyAction">
+			<result>/WEB-INF/admin/scoreModify.jsp</result>
+		</action>
+		<action name="scoreModifyResult" class="ScoreModifyResultAction">
+			<result>/WEB-INF/admin/scoreModifyResult.jsp</result>
+		</action>
+		<action name="scoreModifyResultSuc" class="ScoreModifyResultSucAction">
+			<result>/WEB-INF/admin/scoreModifyResultSuc.jsp</result>
+		</action>
+		<action name="scoreModifyResultGrade" class="ScoreModifyResultGradeAction">
+			<result>/WEB-INF/admin/scoreModifyResultGrade.jsp</result>
+		</action>
+		<action name="scoreModifyResultGradeSuc" class="ScoreModifyResultGradeSucAction">
+			<result>/WEB-INF/admin/scoreModifyResultGradeSuc.jsp</result>
+		</action>
+		<action name="scoreDelete" class="ScoreDeleteAction">
+			<result>/WEB-INF/admin/scoreDelete.jsp</result>
+		</action>
+		<action name="scoreDeleteResult" class="ScoreDeleteResultAction">
+			<result>/WEB-INF/admin/scoreDeleteResult.jsp</result>
+		</action>
+		<action name="scoreDeleteResultSuc" class="ScoreDeleteResultSucAction">
+			<result>/WEB-INF/admin/scoreDeleteResultSuc.jsp</result>
+		</action>
+		<action name="scoreDeleteResultGrade" class="ScoreDeleteResultGradeAction">
+			<result>/WEB-INF/admin/scoreDeleteResultGrade.jsp</result>
+		</action>
+		<action name="scoreDeleteResultGradeSuc" class="ScoreDeleteResultGradeSucAction">
+			<result>/WEB-INF/admin/scoreDeleteResultGradeSuc.jsp</result>
+		</action>
+		<action name="scoreCount" class="ScoreCountAction">
+			<result>/WEB-INF/admin/scoreCount.jsp</result>
+		</action>
+		<action name="scoreCountSuc" class="ScoreCountSucAction">
+			<result>/WEB-INF/admin/scoreCountSuc.jsp</result>
+		</action>
+		<action name="scoreCountNianJi" class="ScoreCountNianJiAction">
+			<result>/WEB-INF/admin/scoreCountNianJi.jsp</result>
+			<result name="input" type="redirectAction">scoreCount</result>
+		</action>
+		<action name="scorePrinter" class="ScorePrinterAction">
+			<result>/WEB-INF/admin/scorePrinter.jsp</result>
+		</action>
+		<action name="scorePrinterSuc" class="ScorePrinterSucAction" method="generateContract">
+            <result name="success" type="stream">
+                <param name="contentType">application/pdf; charset=gb2312</param>
+                <param name="inputName">pdfStream</param>
+                <param name="contentDisposition">inline; filename="${fileName}"</param>
+                <param name="bufferSize">2048</param>
+            </result>
+            <result name="input" type="redirectAction">scorePrinter</result>
+		</action>
+		<action name="scorePrinterGradeSuc" class="ScorePrinterGradeSucAction" method="generateContract">
+            <result name="success" type="stream">
+                <param name="contentType">application/pdf; charset=gb2312</param>
+                <param name="inputName">pdfStream</param>
+                <param name="contentDisposition">inline; filename="${fileName}"</param>
+                <param name="bufferSize">8096</param>
+            </result>
+            <result name="input" type="redirectAction">scorePrinter</result>
+		</action>
+	</package>
+	<package name="tools" extends="admin,json-default">
+		<action name="execRandomPass" class="ExecRandomPassAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="autoExecTeacherBh" class="AutoExecTeacherBhAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="autoExecCourseBh" class="AutoExecCourseBhAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="autoExecGradeBh" class="AutoExecGradeBhAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="scoreEnterTest" class="ScoreEnterTestAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="stuSearchTest" class="StuSearchTestAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="stuSearchGradeTest" class="StuSearchGradeTestAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="teacherSearchTest" class="TeacherSearchTestAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="scoreEnterStuTest" class="ScoreEnterStuTestAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="scoreQueryStuTest" class="ScoreQueryStuTestAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="scoreQueryStuCidTest" class="ScoreQueryStuCidTestAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="scoreQueryStuTypeXqTest" class="ScoreQueryStuTypeXqTestAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="scoreQueryGradeCidTest" class="ScoreQueryGradeCidTestAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="scoreQueryLastTest" class="ScoreQueryLastTestAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="scoreModifyStuTest" class="ScoreModifyStuTestAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="scoreCountTest" class="ScoreCountTestAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="loginJudge" class="LoginJudgeAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="adminPassModify" class="AdminPassModifyAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+
+	<package name="scorePicture" extends="jfreechart-default">
+		<action name="scoreRankPie" class="ScoreRankPieAction">
+			<result type="chart">
+				<param name="width">800</param>
+				<param name="height">600</param>
+			</result>
+		</action>
+		<action name="scoreRankBar3D" class="ScoreRankBar3DAction">
+			<result type="chart">
+				<param name="width">800</param>
+				<param name="height">600</param>
+			</result>
+		</action>
+		<action name="scoreVariationLine" class="ScoreVariationLineAction">
+			<result type="chart">
+				<param name="width">1200</param>
+				<param name="height">600</param>
+			</result>
+		</action>
+		<action name="scoreAnalyze" class="ScoreAnalyzeAction">
+			<result type="chart">
+				<param name="width">1200</param>
+				<param name="height">600</param>
+			</result>
+		</action>
+		<action name="scoreAnalyzeSecond" class="ScoreAnalyzeSecondAction">
+			<result type="chart">
+				<param name="width">1200</param>
+				<param name="height">600</param>
+			</result>
+		</action>
+		<action name="scoreAnalyzeThird" class="ScoreAnalyzeThirdAction">
+			<result type="chart">
+				<param name="width">1200</param>
+				<param name="height">600</param>
+			</result>
+		</action>
+		<action name="scoreAnalyzeFive" class="ScoreAnalyzeFiveAction">
+			<result type="chart">
+				<param name="width">1200</param>
+				<param name="height">600</param>
+			</result>
+		</action>
+		<action name="scoreCountAnalyze" class="ScoreCountAnalyzeAction">
+			<result type="chart">
+				<param name="width">1200</param>
+				<param name="height">600</param>
+			</result>
+		</action>
+	</package>
+</struts>    

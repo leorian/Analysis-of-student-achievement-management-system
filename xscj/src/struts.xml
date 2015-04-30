@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+<include file="struts-default.xml"/>
+<constant name="struts.action.excludePattern" value="/DisplayChart"></constant>
+<constant name="struts.i18n.encoding" value="UTF-8"/>
+<include file="adminStruts.xml"></include>
+<include file="stuStruts.xml"></include>
+<include file="teacherStruts.xml"></include>
+<package name="Exit" extends="struts-default">
+	<action name="exitSystem" class="ExitSystemAction">
+		<result>index.jsp</result>
+	</action>
+</package>
+</struts>    

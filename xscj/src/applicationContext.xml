@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+	
+	<bean id="ExitSystemAction" class="com.xscj.action.ExitSystemAction" scope="prototype"></bean>
+	
+	<bean id="AdminMainAction" class="com.xscj.action.AdminMainAction" scope="prototype"></bean>
+	<bean id="StuFormAction" class="com.xscj.action.StuFormAction" scope="prototype"></bean>
+	
+	<bean id="StuFormRegisterAction" class="com.xscj.action.StuFormRegisterAction" scope="prototype"></bean>
+	
+	<bean id="StuSearchAction" class="com.xscj.action.StuSearchAction" scope="prototype"></bean>
+	
+	<bean id="StuSeeingAction" class="com.xscj.action.StuSeeingAction" scope="prototype"></bean>
+	
+	<bean id="StuModifyAction" class="com.xscj.action.StuModifyAction" scope="prototype"></bean>
+	
+	<bean id="StuModifySucAction" class="com.xscj.action.StuModifySucAction" scope="prototype"></bean>
+	
+	<bean id="StuSearchSucAction" class="com.xscj.action.StuSearchSucAction" scope="prototype"></bean>
+	
+	<bean id="StuSearchByGradeAction" class="com.xscj.action.StuSearchByGradeAction" scope="prototype"></bean>
+	
+	<bean id="StuSearchSucByGradeAction" class="com.xscj.action.StuSearchSucByGradeAction" scope="prototype"></bean>
+	
+	<bean id="TeacherFormRegisterAction" class="com.xscj.action.TeacherFormRegisterAction" scope="prototype"></bean>
+	
+	<bean id="TeacherFormAction" class="com.xscj.action.TeacherFormAction" scope="prototype"></bean>
+	
+	<bean id="TeacherSearchAction" class="com.xscj.action.TeacherSearchAction" scope="prototype"></bean>
+	
+	<bean id="TeacherSearchSucAction" class="com.xscj.action.TeacherSearchSucAction" scope="prototype"></bean>
+	
+	<bean id="TeacherSeeingAction" class="com.xscj.action.TeacherSeeingAction" scope="prototype"></bean>
+	
+	<bean id="TeacherModifyAction" class="com.xscj.action.TeacherModifyAction" scope="prototype"></bean>
+	
+	<bean id="TeacherModifySucAction" class="com.xscj.action.TeacherModifySucAction" scope="prototype"></bean>
+	
+	<bean id="ExecRandomPassAction" class="com.xscj.action.ExecRandomPassAction" scope="prototype"></bean>
+	
+	<bean id="AutoExecTeacherBhAction" class="com.xscj.action.AutoExecTeacherBhAction" scope="prototype"></bean>
+	
+	<bean id="AutoExecCourseBhAction" class="com.xscj.action.AutoExecCourseBhAction" scope="prototype"></bean>
+	
+	<bean id="AutoExecGradeBhAction" class="com.xscj.action.AutoExecGradeBhAction" scope="prototype"></bean>
+	
+	<bean id="ShowAllStuAction" class="com.xscj.action.ShowAllStuAction" scope="prototype"></bean>
+	
+	<bean id="ShowAllTeacherAction" class="com.xscj.action.ShowAllTeacherAction" scope="prototype"></bean>
+	
+	<bean id="CourseFormAction" class="com.xscj.action.CourseFormAction" scope="prototype"></bean>
+	 
+	 <bean id="CourseFormRegisterAction" class="com.xscj.action.CourseFormRegisterAction" scope="prototype" ></bean>
+	 
+	 <bean id="GradeSetUpAction" class="com.xscj.action.GradeSetUpAction" scope="prototype"></bean>
+	
+	<bean id="GradeSetUpRegisterAction" class="com.xscj.action.GradeSetUpRegisterAction" scope="prototype"></bean>
+	
+	<bean id="TeachingArrangeFormAction" class="com.xscj.action.TeachingArrangeFormAction" scope="prototype"></bean>
+	
+	<bean id="TeachingArrangeFormRegisterAction" class="com.xscj.action.TeachingArrangeFormRegisterAction" scope="prototype"></bean>
+	
+	<bean id="CourseDeleteAction" class="com.xscj.delete.action.CourseDeleteAction" scope="prototype"></bean>
+	
+	<bean id="GradeDeleteAction" class="com.xscj.delete.action.GradeDeleteAction" scope="prototype"></bean>
+	
+	<bean id="StuDeleteAction" class="com.xscj.delete.action.StuDeleteAction" scope="prototype"></bean>
+	
+	<bean id="TeacherDeleteAction" class="com.xscj.delete.action.TeacherDeleteAction" scope="prototype"></bean>
+	
+	<bean id="TeacherTeachingAction" class="com.xscj.teacher.action.TeacherTeachingAction" scope="prototype"></bean>
+	
+	<bean id="ScoreRecordAction" class="com.xscj.teacher.action.ScoreRecordAction" scope="prototype"></bean>
+	
+	<bean id="ScoreRecordFinishAction" class="com.xscj.teacher.action.ScoreRecordFinishAction" scope="prototype"></bean>
+	
+	<bean id="GradeTeachingChoseAction" class="com.xscj.action.GradeTeachingChoseAction" scope="prototype"></bean>
+	
+	<bean id="ScoreEnterChoseAction" class="com.xscj.score.action.ScoreEnterChoseAction" scope="prototype"></bean>
+	
+	<bean id="ScoreEnterFormAction" class="com.xscj.score.action.ScoreEnterFormAction" scope="prototype"></bean>
+	
+	<bean id="ScoreQueryAction" class="com.xscj.score.action.ScoreQueryAction" scope="prototype"></bean>
+	
+	<bean id="ScoreQueryResultAction" class="com.xscj.score.action.ScoreQueryResultAction" scope="prototype"></bean>
+	
+	 <bean id="ScoreRankPieAction" class="com.xscj.score.action.ScoreRankPieAction" scope="prototype"></bean>
+	
+	<bean id="ScoreRankBar3DAction" class="com.xscj.score.action.ScoreRankBar3DAction" scope="prototype"></bean>
+	
+	<bean id="ScoreVariationLineAction" class="com.xscj.score.action.ScoreVariationLineAction" scope="prototype"></bean>
+	
+	<bean id="ScoreAnalyzeAction" class="com.xscj.score.action.ScoreAnalyzeAction" scope="prototype"></bean>
+	
+	<bean id="ScoreQueryResultSecondAction" class="com.xscj.score.action.ScoreQueryResultSecondAction" scope="prototype"></bean>
+	
+	<bean id="ScoreAnalyzeSecondAction" class="com.xscj.score.action.ScoreAnalyzeSecondAction" scope="prototype"></bean>
+	
+	<bean id="ScoreQueryResultThirdAction" class="com.xscj.score.action.ScoreQueryResultThirdAction" scope="prototype"></bean>
+	
+	<bean id="ScoreAnalyzeThirdAction" class="com.xscj.score.action.ScoreAnalyzeThirdAction" scope="prototype"></bean>
+	
+	<bean id="ScoreAnalyzeFiveAction" class="com.xscj.score.action.ScoreAnalyzeFiveAction" scope="prototype"></bean>
+	<bean id="ScoreQueryResultFourAction" class="com.xscj.score.action.ScoreQueryResultFourAction" scope="prototype"></bean>
+	
+	<bean id="ScoreQueryResultFiveAction" class="com.xscj.score.action.ScoreQueryResultFiveAction" scope="prototype"></bean>
+	
+	<bean id="ScoreEnterSimpleStuAction" class="com.xscj.score.action.ScoreEnterSimpleStuAction" scope="prototype"></bean>
+	
+	<bean id="ScoreEnterSimpleStuSucAction" class="com.xscj.score.action.ScoreEnterSimpleStuSucAction" scope="prototype"></bean>
+	
+	<bean id="ScoreModifyAction" class="com.xscj.score.action.ScoreModifyAction" scope="prototype"></bean>
+	
+	<bean id="ScoreModifyResultAction" class="com.xscj.score.action.ScoreModifyResultAction" scope="prototype"></bean>
+	
+	<bean id="ScoreModifyResultSucAction" class="com.xscj.score.action.ScoreModifyResultSucAction" scope="prototype"></bean>
+	
+	<bean id="ScoreModifyResultGradeAction" class="com.xscj.score.action.ScoreModifyResultGradeAction" scope="prototype"></bean>
+	
+	<bean id="ScoreModifyResultGradeSucAction" class="com.xscj.score.action.ScoreModifyResultGradeSucAction" scope="prototype"></bean>
+	
+	<bean id="ScoreDeleteAction" class="com.xscj.score.action.ScoreDeleteAction" scope="prototype"></bean>
+	
+	<bean id="ScoreDeleteResultAction" class="com.xscj.score.action.ScoreDeleteResultAction" scope="prototype"></bean>
+	
+	<bean id="ScoreDeleteResultSucAction" class="com.xscj.score.action.ScoreDeleteResultSucAction" scope="prototype"></bean>
+	
+	<bean id="ScoreDeleteResultGradeAction" class="com.xscj.score.action.ScoreDeleteResultGradeAction" scope="prototype"></bean>
+	
+	<bean id="ScoreDeleteResultGradeSucAction" class="com.xscj.score.action.ScoreDeleteResultGradeSucAction" scope="prototype"></bean>
+	
+	<bean id="ScoreCountAction" class="com.xscj.score.action.ScoreCountAction" scope="prototype"></bean>
+	
+	<bean id="ScoreCountSucAction" class="com.xscj.score.action.ScoreCountSucAction" scope="prototype"></bean>
+	
+	<bean id="ScoreCountNianJiAction" class="com.xscj.score.action.ScoreCountNianJiAction" scope="prototype"></bean>
+	
+	<bean id="ScoreEnterTestAction" class="com.xscj.test.action.ScoreEnterTestAction" scope="prototype"></bean>
+	
+	<bean id="ScorePrinterAction" class="com.xscj.score.action.ScorePrinterAction" scope="prototype"></bean>
+	
+	<bean id="ScorePrinterSucAction" class="com.xscj.score.action.ScorePrinterSucAction" scope="prototype"></bean>
+	
+	<bean id="ScorePrinterGradeSucAction" class="com.xscj.score.action.ScorePrinterGradeSucAction" scope="prototype"></bean>
+	
+	<bean id="StuSearchTestAction" class="com.xscj.test.action.StuSearchTestAction" scope="prototype"></bean>
+	
+	<bean id="StuSearchGradeTestAction" class="com.xscj.test.action.StuSearchGradeTestAction" scope="prototype"></bean>
+	
+	<bean id="TeacherSearchTestAction" class="com.xscj.test.action.TeacherSearchTestAction" scope="prototype"></bean>
+	
+	<bean id="LoginJudgeAction" class="com.xscj.test.action.LoginJudgeAction" scope="prototype"></bean>
+	
+	<bean id="CourseAllAction" class="com.xscj.action.CourseAllAction" scope="prototype"></bean>
+	<bean id="GradeAllAction" class="com.xscj.action.GradeAllAction" scope="prototype"></bean>
+	<bean id="ScoreEnterStuTestAction" class="com.xscj.test.action.ScoreEnterStuTestAction" scope="prototype"></bean>
+	
+	<bean id="ScoreQueryStuTestAction" class="com.xscj.test.action.ScoreQueryStuTestAction" scope="prototype"></bean>
+		
+	<bean id="ScoreQueryStuCidTestAction" class="com.xscj.test.action.ScoreQueryStuCidTestAction" scope="prototype"></bean>
+	
+	<bean id="ScoreQueryStuTypeXqTestAction" class="com.xscj.test.action.ScoreQueryStuTypeXqTestAction" scope="prototype"></bean>
+	
+	<bean id="ScoreQueryGradeCidTestAction" class="com.xscj.test.action.ScoreQueryGradeCidTestAction" scope="prototype"></bean>
+	
+	<bean id="ScoreQueryLastTestAction" class="com.xscj.test.action.ScoreQueryLastTestAction" scope="prototype"></bean>
+	
+	<bean id="ScoreModifyStuTestAction" class="com.xscj.test.action.ScoreModifyStuTestAction" scope="prototype"></bean>
+	
+	<bean id="ScoreCountTestAction" class="com.xscj.test.action.ScoreCountTestAction" scope="prototype"></bean>
+	
+	
+	<bean id="StuMainAction" class="com.xscj.stu.action.StuMainAction" scope="prototype"></bean>
+	
+	<bean id="ScoreExisitsTestAction" class="com.xscj.stu.action.ScoreExisitsTestAction" scope="prototype"></bean>
+	
+	<bean id="ScoreCountAnalyzeAction" class="com.xscj.score.action.ScoreCountAnalyzeAction" scope="prototype"></bean>
+	
+	<bean id="StuScoreSearchAction" class="com.xscj.stu.action.StuScoreSearchAction" scope="prototype"></bean>
+	
+	<bean id="PassModifyAction" class="com.xscj.stu.action.PassModifyAction" scope="prototype"></bean>
+	
+	<bean id="TeacherMainAction" class="com.xscj.teacher.action.TeacherMainAction" scope="prototype"></bean>
+	
+	<bean id="TeacherScoreAddAction" class="com.xscj.teacher.action.TeacherScoreAddAction" scope="prototype"></bean>
+	<bean id="TeacherScoreAddSucAction" class="com.xscj.teacher.action.TeacherScoreAddSucAction" scope="prototype"></bean>
+	
+	<bean id="TeacherScoreDelAction" class="com.xscj.teacher.action.TeacherScoreDelAction" scope="prototype"></bean>
+	
+	<bean id="TeacherScoreDelSucAction" class="com.xscj.teacher.action.TeacherScoreDelSucAction" scope="prototype"></bean>
+	
+	<bean id="TeacherScoreModifyAction" class="com.xscj.teacher.action.TeacherScoreModifyAction" scope="prototype"></bean>
+	
+	<bean id="TeacherScoreModifySucAction" class="com.xscj.teacher.action.TeacherScoreModifySucAction" scope="prototype"></bean>
+	
+	<bean id="TeacherScoreSeeingAction" class="com.xscj.teacher.action.TeacherScoreSeeingAction" scope="prototype"></bean>
+	
+	<bean id="TeachingArrangeSeeAction" class="com.xscj.action.TeachingArrangeSeeAction" scope="prototype"></bean>
+	<bean id="TeachingArrangeModifyAction" class="com.xscj.action.TeachingArrangeModifyAction" scope="prototype"></bean>
+	<bean id="TeachingArrangeModifySucAction" class="com.xscj.action.TeachingArrangeModifySucAction" scope="prototype"></bean>
+	<bean id="TeacherPassModifyAction" class="com.xscj.teacher.action.TeacherPassModifyAction" scope="prototype"></bean>
+	
+	<bean id="AdminPassModifyAction" class="com.xscj.admin.action.AdminPassModifyAction" scope="prototype"></bean>
+	
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close"
+		p:driverClassName="com.mysql.jdbc.Driver"
+		p:url="jdbc:mysql://localhost:3306/ssm"
+		p:username="root"
+		p:password="root"
+	></bean>
+	
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" p:dataSource-ref="dataSource"></bean>
+	
+	<context:component-scan base-package="com.xscj.dao"></context:component-scan>
+	<context:component-scan base-package="com.xscj.service"></context:component-scan>
+</beans>
