@@ -192,34 +192,34 @@ insert into sp_course(c_id, c_name) values('C10009','历史');
 insert into sp_course(c_id, c_name) values('C10010','音乐');
 UPDATE sp_record SET count = 10 WHERE categorys = 'C';
 
-insert into sp_teacher values('T10001','谢中贵', '2804118302', '男', '汉族', '中共党员', 
+insert into sp_teacher values('T10001','谢中贵', '1', '男', '汉族', '中共党员', 
 '340822199108084316', '安徽省合肥市', '2014-04-18', '本科', '安徽科技学院', '18365073582', 'C10001', null, false);
 
-insert into sp_teacher values('T10002','洛天', '2804118302', '男', '汉族', '中共党员', 
+insert into sp_teacher values('T10002','洛天', '1', '男', '汉族', '中共党员', 
 '340822199108084317', '安徽省合肥市', '2014-04-18', '本科', '安徽科技学院', '18365073582', 'C10002', null, false);
 
-insert into sp_teacher values('T10003','洛熙', '2804118302', '男', '汉族', '中共党员', 
+insert into sp_teacher values('T10003','洛熙', '1', '男', '汉族', '中共党员', 
 '340822199108084318', '安徽省合肥市', '2014-04-18', '本科', '安徽科技学院', '18365073582', 'C10003', null, false);
 
-insert into sp_teacher values('T10004','落夕', '2804118302', '女', '汉族', '中共党员', 
+insert into sp_teacher values('T10004','落夕', '1', '女', '汉族', '中共党员', 
 '340822199108084319', '安徽省合肥市', '2014-04-18', '本科', '安徽科技学院', '18365073582', 'C10004', null, false);
 
-insert into sp_teacher values('T10005','张三', '2804118302', '男', '汉族', '中共党员', 
+insert into sp_teacher values('T10005','张三', '1', '男', '汉族', '中共党员', 
 '340822199108084320', '安徽省合肥市', '2014-04-18', '本科', '安徽科技学院', '18365073582', 'C10005', null, false);
 
-insert into sp_teacher values('T10006','李四', '2804118302', '男', '汉族', '中共党员', 
+insert into sp_teacher values('T10006','李四', '1', '男', '汉族', '中共党员', 
 '340822199108084321', '安徽省合肥市', '2014-04-18', '本科', '安徽科技学院', '18365073582', 'C10006', null, false);
 
-insert into sp_teacher values('T10007','王五', '2804118302', '男', '汉族', '中共党员', 
+insert into sp_teacher values('T10007','王五', '1', '男', '汉族', '中共党员', 
 '340822199108084322', '安徽省合肥市', '2014-04-18', '本科', '安徽科技学院', '18365073582', 'C10007', null, false);
 
-insert into sp_teacher values('T10008','王世博', '2804118302', '男', '汉族', '中共党员', 
+insert into sp_teacher values('T10008','王世博', '1', '男', '汉族', '中共党员', 
 '340822199108084323', '安徽省合肥市', '2014-04-18', '本科', '安徽科技学院', '18365073582', 'C10008', null, false);
 
-insert into sp_teacher values('T10009','刘伯温', '2804118302', '男', '汉族', '中共党员', 
+insert into sp_teacher values('T10009','刘伯温', '1', '男', '汉族', '中共党员', 
 '340822199108084324', '安徽省合肥市', '2014-04-18', '本科', '安徽科技学院', '18365073582', 'C10009', null, false);
 
-insert into sp_teacher values('T10010','赵六', '2804118302', '男', '汉族', '中共党员', 
+insert into sp_teacher values('T10010','赵六', '1', '男', '汉族', '中共党员', 
 '340822199108084325', '安徽省合肥市', '2014-04-18', '本科', '安徽科技学院', '18365073582', 'C10010', null, false);
 UPDATE sp_record SET count = 10 WHERE categorys = 'T';
 
