@@ -1,8 +1,9 @@
-#stu_score_manager
-访问地址：[http://liuyanlin-leorain.rhcloud.com/](http://liuyanlin-leorain.rhcloud.com/)
-作者：聚散流沙
-QQ：1573623031
-微信号：leorain201314
+#stu_score_manager<br/>
+访问地址：[http://liuyanlin-leorain.rhcloud.com/](http://liuyanlin-leorain.rhcloud.com/)<br/>
+作者：聚散流沙<br/>
+QQ：1573623031<br/>
+微信号：leorain201314<br/>
+联系本人获取最新升级版本<br/>
 管理员端：
 体验账号：用户名：校长 密码：0
 ![学生信息添加、学生信息编辑、学生信息查询、班级信息查询](http://git.oschina.net/uploads/images/2016/1112/202208_46de5999_381412.png "学生管理")
