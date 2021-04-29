@@ -3,7 +3,7 @@
   QQ:1573623031
   微信：leorain201314
 学生成绩管理分析系统
-![](%E7%B3%BB%E7%BB%9F%E6%88%AA%E5%9B%BE/Capture.PNG?raw=true)
+![](https://gitee.com/leorain/Analysis-of-student-achievement-management-system/raw/master/%E7%B3%BB%E7%BB%9F%E6%88%AA%E5%9B%BE/Capture.PNG?raw=true)
 
 ![](%E7%B3%BB%E7%BB%9F%E6%88%AA%E5%9B%BE/Capture1.PNG?raw=true)
 
