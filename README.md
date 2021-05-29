@@ -4,6 +4,11 @@
 QQ：1573623031<br/>
 微信号：leorain201314<br/>
 联系本人获取最新升级版本<br/>
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0529/212533_4eb9a924_381412.png "QQ截图20210529212404.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0529/212547_e2398ec7_381412.png "QQ截图20210529212304.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0529/212603_be141fe9_381412.png "QQ截图20210529212324.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0529/213310_435ff14b_381412.png "QQ截图20210529213152.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0529/213322_0c8fde89_381412.png "QQ截图20210529213239.png")
 管理员端：
 体验账号：用户名：校长 密码：0
 ![学生信息添加、学生信息编辑、学生信息查询、班级信息查询](http://git.oschina.net/uploads/images/2016/1112/202208_46de5999_381412.png "学生管理")
