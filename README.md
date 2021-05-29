@@ -11,9 +11,9 @@ QQ：1573623031<br/>
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0529/213322_0c8fde89_381412.png "QQ截图20210529213239.png")
 管理员端：
 体验账号：用户名：校长 密码：0
-![输入图片说明](http://git.oschina.net/uploads/images/2016/1112/202208_46de5999_381412.png "QQ截图20210529213239.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0529/214600_c1c4c40a_1614990.png "QQ截图20210529213239.png")
 
-![学生信息添加、学生信息编辑、学生信息查询、班级信息查询](http://git.oschina.net/uploads/images/2016/1112/202208_46de5999_381412.png "学生管理")
+![学生信息添加、学生信息编辑、学生信息查询、班级信息查询](https://images.gitee.com/uploads/images/2021/0529/214600_c1c4c40a_1614990.png "学生管理")
 
 ![教师信息添加、教师信息编辑、教师信息查询](http://git.oschina.net/uploads/images/2016/1112/202441_d4b51a43_381412.png "教师管理")
 
