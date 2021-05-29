@@ -9,6 +9,8 @@ QQ：1573623031<br/>
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0529/212603_be141fe9_381412.png "QQ截图20210529212324.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0529/213310_435ff14b_381412.png "QQ截图20210529213152.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0529/213322_0c8fde89_381412.png "QQ截图20210529213239.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0529/220118_069745f7_381412.png "QQ截图20210529215856.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0529/220133_903c3512_381412.png "QQ截图20210529215958.png")
 管理员端：
 体验账号：用户名：校长 密码：0
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0529/214600_c1c4c40a_1614990.png "QQ截图20210529213239.png")
