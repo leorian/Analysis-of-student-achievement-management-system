@@ -1,5 +1,5 @@
 #stu_score_manager<br/>
-访问地址：[http://liuyanlin-leorain.rhcloud.com/](http://liuyanlin-leorain.rhcloud.com/)<br/>
+访问地址：[https://gitee.com/leorain/Analysis-of-student-achievement-management-system)<br/>
 作者：聚散流沙<br/>
 QQ：1573623031<br/>
 微信号：leorain201314<br/>
