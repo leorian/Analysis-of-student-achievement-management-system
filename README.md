@@ -52,8 +52,8 @@ QQ：1573623031<br/>
 体验账号：用户名：1 密码：0
 ![学员端成绩查询页面](http://git.oschina.net/uploads/images/2016/1112/204058_41401388_381412.png "学员端成绩查询页面")
 
-交个朋友
+开源不易，多谢支持
 <br/>
-| 支付宝扫码加好友   | 微信扫码加好友  |  QQ扫码加好友 |
-|---|---|---|
-|<img src="https://images.gitee.com/uploads/images/2022/0408/071045_d4e4cff0_381412.jpeg" width="200px" heigth="200px"/>   | <img src="https://images.gitee.com/uploads/images/2022/0408/071102_611afdf6_381412.jpeg" width="200px" height="200px"/>  | <img src="https://images.gitee.com/uploads/images/2022/0408/073202_3685aa22_381412.jpeg" width="200px" height="200px"/>  |
+<img src="https://images.gitee.com/uploads/images/2021/0430/073746_29a3282d_1614990.jpeg" width="360px" height="560px"/>
+<img src="https://images.gitee.com/uploads/images/2021/0430/073940_b7d142f0_1614990.png" width="360px" height="500px"/>
+
