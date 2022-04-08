@@ -59,5 +59,5 @@ QQ：1573623031<br/>
 
 | 支付宝扫码加好友   | 微信扫码加好友  |  QQ扫码加好友 |
 |---|---|---|
-|<img src="https://images.gitee.com/uploads/images/2022/0408/071045_d4e4cff0_381412.jpeg" width="300px" heigth="300px"/>   | <img src="https://images.gitee.com/uploads/images/2022/0408/071102_611afdf6_381412.jpeg" width="300px" height="300px"/>  | <img src="https://images.gitee.com/uploads/images/2022/0408/072019_bbe2bc43_381412.jpeg" width="450px" height="650px"/>  |
+|<img src="https://images.gitee.com/uploads/images/2022/0408/071045_d4e4cff0_381412.jpeg" width="300px" heigth="300px"/>   | <img src="https://images.gitee.com/uploads/images/2022/0408/071102_611afdf6_381412.jpeg" width="300px" height="300px"/>  | <img src="https://images.gitee.com/uploads/images/2022/0408/072019_bbe2bc43_381412.jpeg" width="300px" height="300px"/>  |
 
