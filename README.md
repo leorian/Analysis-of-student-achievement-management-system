@@ -56,7 +56,8 @@ QQ：1573623031<br/>
 ![学员端成绩查询页面](http://git.oschina.net/uploads/images/2016/1112/204058_41401388_381412.png "学员端成绩查询页面")
 
 开源不易，多谢支持
-<br/>
-<img src="https://images.gitee.com/uploads/images/2021/0430/073746_29a3282d_1614990.jpeg" width="360px" height="560px"/>
-<img src="https://images.gitee.com/uploads/images/2021/0430/073940_b7d142f0_1614990.png" width="360px" height="500px"/>
+
+| 支付宝扫码加好友   | 微信扫码加好友  |  QQ扫码加好友 |
+|---|---|---|
+|<img src="https://images.gitee.com/uploads/images/2022/0408/071045_d4e4cff0_381412.jpeg" width="300px" heigth="300px"/>   | <img src="https://images.gitee.com/uploads/images/2022/0408/071102_611afdf6_381412.jpeg" width="300px" height="300px"/>  | <img src="https://images.gitee.com/uploads/images/2022/0408/072019_bbe2bc43_381412.jpeg" width="450px" height="650px"/>  |
 
