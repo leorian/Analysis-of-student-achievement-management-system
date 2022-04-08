@@ -1,3 +1,4 @@
+![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=leorian.leorian)
 #stu_score_manager<br/>
 访问地址：[https://gitee.com/leorain/Analysis-of-student-achievement-management-system)<br/>
 作者：聚散流沙<br/>
