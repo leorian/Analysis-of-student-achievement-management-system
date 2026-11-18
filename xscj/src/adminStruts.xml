@@ -336,6 +336,17 @@
 	</package>
 
 	<package name="scorePicture" extends="jfreechart-default">
+		<interceptors>
+			<interceptor name="loginAuthority" class="com.xscj.util.LoginInterceptor"></interceptor>
+			<interceptor-stack name="chartdefault">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="loginAuthority"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="chartdefault"></default-interceptor-ref>
+		<global-results>
+			<result name="login">index.jsp</result>
+		</global-results>
 		<action name="scoreRankPie" class="ScoreRankPieAction">
 			<result type="chart">
 				<param name="width">800</param>
